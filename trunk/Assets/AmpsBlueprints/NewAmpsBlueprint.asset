@@ -1,0 +1,1121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0bca2a297a2de8419e5a6d8615f92a0, type: 3}
+  m_Name: Blueprint
+  m_EditorClassIdentifier: 
+  emitterStack:
+    name: Emitter
+    stackFunction: 0
+    modules:
+    - {fileID: 11400002}
+    moduleType: Amps.BaseEmitterModule
+    selectedModule: {fileID: 11400002}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 0
+  renderStack:
+    name: Render
+    stackFunction: 1
+    modules: []
+    moduleType: Amps.BaseRenderModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 0
+  sharedStack:
+    name: Shared
+    stackFunction: 2
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 0
+  spawnRateStack:
+    name: Spawn Rate
+    stackFunction: 3
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 0
+    value: 0
+  deathConditionStack:
+    name: Death Condition
+    stackFunction: 4
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 1
+    values: []
+  deathDurationStack:
+    name: Death Duration
+    stackFunction: 5
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 1
+    values: []
+  customScalarStack:
+    name: Custom Scalar
+    stackFunction: 6
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 1
+    values: []
+  customVectorStack:
+    name: Custom Vector
+    stackFunction: 7
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 1
+    values: []
+    oldValues: []
+    useOldValues: 0
+  accelerationStack:
+    name: Acceleration
+    stackFunction: 8
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+    values: []
+    oldValues: []
+    useOldValues: 1
+  velocityStack:
+    name: Velocity
+    stackFunction: 9
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+    values: []
+    oldValues: []
+    useOldValues: 1
+  positionStack:
+    name: Position
+    stackFunction: 10
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+    values: []
+    oldValues: []
+    useOldValues: 1
+  rotationRateStack:
+    name: Rotation Rate
+    stackFunction: 11
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+    values: []
+    oldValues: []
+    useOldValues: 1
+  rotationStack:
+    name: Rotation
+    stackFunction: 12
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+    values: []
+    oldValues: []
+    useOldValues: 1
+  scaleStack:
+    name: Scale
+    stackFunction: 13
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+    values: []
+    oldValues: []
+    useOldValues: 0
+  colorStack:
+    name: Color
+    stackFunction: 14
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 1
+    values: []
+    oldValues: []
+    useOldValues: 0
+  pivotOffsetStack:
+    name: Pivot Offset
+    stackFunction: 15
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+    values: []
+    oldValues: []
+    useOldValues: 0
+  multiFunctionStack:
+    name: Multi Function
+    stackFunction: 16
+    modules: []
+    moduleType: Amps.BaseMultiFunctionModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 0
+  stacks:
+  - name: Emitter
+    stackFunction: 0
+    modules:
+    - {fileID: 11400002}
+    moduleType: Amps.BaseEmitterModule
+    selectedModule: {fileID: 11400002}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 0
+  - name: Render
+    stackFunction: 1
+    modules: []
+    moduleType: Amps.BaseRenderModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 0
+  - name: Shared
+    stackFunction: 2
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 0
+  - name: Spawn Rate
+    stackFunction: 3
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 0
+  - name: Death Condition
+    stackFunction: 4
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 1
+  - name: Death Duration
+    stackFunction: 5
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 1
+  - name: Custom Scalar
+    stackFunction: 6
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 1
+  - name: Custom Vector
+    stackFunction: 7
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 1
+  - name: Acceleration
+    stackFunction: 8
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+  - name: Velocity
+    stackFunction: 9
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+  - name: Position
+    stackFunction: 10
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+  - name: Rotation Rate
+    stackFunction: 11
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+  - name: Rotation
+    stackFunction: 12
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+  - name: Scale
+    stackFunction: 13
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+  - name: Color
+    stackFunction: 14
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 1
+  - name: Pivot Offset
+    stackFunction: 15
+    modules: []
+    moduleType: Amps.BaseGenericModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 1
+    isParticleStack: 1
+  - name: Multi Function
+    stackFunction: 16
+    modules: []
+    moduleType: Amps.BaseMultiFunctionModule
+    selectedModule: {fileID: 0}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e71907e44b69504bab638893b06dba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
+  type: Basic setup
+  ownerBlueprint: {fileID: 11400000}
+  ownerStack:
+    name: Emitter
+    stackFunction: 0
+    modules:
+    - {fileID: 11400002}
+    moduleType: Amps.BaseEmitterModule
+    selectedModule: {fileID: 11400002}
+    ownerBlueprint: {fileID: 11400000}
+    isVector3Stack: 0
+    isParticleStack: 0
+  moduleName: {fileID: 11400004}
+  subMenuName: 
+  selectedProperty: {fileID: 11400004}
+  exampleInput: {x: 0, y: 0, z: 0, w: 0}
+  implementsVisualization: 0
+  isVisualizationEnabled: 0
+  properties:
+  - {fileID: 11400004}
+  - {fileID: 11400006}
+  - {fileID: 11400014}
+  - {fileID: 11400016}
+  - {fileID: 11400024}
+  - {fileID: 11400032}
+  - {fileID: 11400040}
+  - {fileID: 11400048}
+  sharedProperties: []
+  emitterDuration: {fileID: 11400006}
+  isLooping: {fileID: 11400014}
+  maxParticles: {fileID: 11400016}
+  updateRate: {fileID: 11400024}
+  timeScale: {fileID: 11400032}
+  accelerationNoiseSmoothing: {fileID: 11400040}
+  playOnAwake: {fileID: 11400048}
+  isEmitting: 0
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b3287b763e8664cbeca8fb53a23c09, type: 3}
+  m_Name: Description
+  m_EditorClassIdentifier: 
+  allowDataModeConstant: 1
+  allowDataModeRandomConstant: 0
+  allowDataModeCurve: 0
+  allowDataModeRandomCurve: 0
+  allowDataModeReference: 0
+  allowDataModeParameter: 0
+  dataMode: 0
+  reference: {fileID: 0}
+  parameterName: 
+  ownerBlueprint: {fileID: 0}
+  coordSystem: 0
+  coordSystemConversionMode: 0
+  propertyRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  shouldSelectThis: 0
+  shouldRepaintPicker: 0
+  shouldBeRemoved: 0
+  randomSeed: 0
+  value: Basic emitter properties
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f0f40f1e6e0404cabead54c1695835, type: 3}
+  m_Name: Emitter duration
+  m_EditorClassIdentifier: 
+  allowDataModeConstant: 1
+  allowDataModeRandomConstant: 0
+  allowDataModeCurve: 0
+  allowDataModeRandomCurve: 0
+  allowDataModeReference: 0
+  allowDataModeParameter: 1
+  dataMode: 0
+  reference: {fileID: 0}
+  parameterName: 
+  ownerBlueprint: {fileID: 11400000}
+  coordSystem: 0
+  coordSystemConversionMode: 0
+  propertyRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  shouldSelectThis: 0
+  shouldRepaintPicker: 0
+  shouldBeRemoved: 0
+  randomSeed: 1577373870
+  constant: 5
+  randomMin: 0
+  randomMax: 5
+  curve: {fileID: 11400008}
+  curveMin: {fileID: 11400010}
+  curveMax: {fileID: 11400012}
+  isInteger: 0
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Emitter duration_curve
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Emitter duration_curveMin
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Emitter duration_curveMax
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4defe050859912c428118c24a46c41b0, type: 3}
+  m_Name: Looping?
+  m_EditorClassIdentifier: 
+  allowDataModeConstant: 1
+  allowDataModeRandomConstant: 0
+  allowDataModeCurve: 0
+  allowDataModeRandomCurve: 0
+  allowDataModeReference: 1
+  allowDataModeParameter: 1
+  dataMode: 0
+  reference: {fileID: 0}
+  parameterName: 
+  ownerBlueprint: {fileID: 11400000}
+  coordSystem: 0
+  coordSystemConversionMode: 0
+  propertyRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  shouldSelectThis: 0
+  shouldRepaintPicker: 0
+  shouldBeRemoved: 0
+  randomSeed: 0
+  value: 1
+--- !u!114 &11400016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f0f40f1e6e0404cabead54c1695835, type: 3}
+  m_Name: Particle limit
+  m_EditorClassIdentifier: 
+  allowDataModeConstant: 1
+  allowDataModeRandomConstant: 1
+  allowDataModeCurve: 0
+  allowDataModeRandomCurve: 0
+  allowDataModeReference: 0
+  allowDataModeParameter: 0
+  dataMode: 0
+  reference: {fileID: 0}
+  parameterName: 
+  ownerBlueprint: {fileID: 11400000}
+  coordSystem: 0
+  coordSystemConversionMode: 0
+  propertyRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  shouldSelectThis: 0
+  shouldRepaintPicker: 0
+  shouldBeRemoved: 0
+  randomSeed: 1483643873
+  constant: 10
+  randomMin: 0
+  randomMax: 10
+  curve: {fileID: 11400018}
+  curveMin: {fileID: 11400020}
+  curveMax: {fileID: 11400022}
+  isInteger: 1
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Particle limit_curve
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 10
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Particle limit_curveMin
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 10
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Particle limit_curveMax
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 10
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f0f40f1e6e0404cabead54c1695835, type: 3}
+  m_Name: Updates per second
+  m_EditorClassIdentifier: 
+  allowDataModeConstant: 1
+  allowDataModeRandomConstant: 0
+  allowDataModeCurve: 0
+  allowDataModeRandomCurve: 0
+  allowDataModeReference: 0
+  allowDataModeParameter: 0
+  dataMode: 0
+  reference: {fileID: 0}
+  parameterName: 
+  ownerBlueprint: {fileID: 11400000}
+  coordSystem: 0
+  coordSystemConversionMode: 0
+  propertyRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  shouldSelectThis: 0
+  shouldRepaintPicker: 0
+  shouldBeRemoved: 0
+  randomSeed: 1160799433
+  constant: 30
+  randomMin: 0
+  randomMax: 30
+  curve: {fileID: 11400026}
+  curveMin: {fileID: 11400028}
+  curveMax: {fileID: 11400030}
+  isInteger: 0
+--- !u!114 &11400026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Updates per second_curve
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 30
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Updates per second_curveMin
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 30
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Updates per second_curveMax
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 30
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f0f40f1e6e0404cabead54c1695835, type: 3}
+  m_Name: Time scale
+  m_EditorClassIdentifier: 
+  allowDataModeConstant: 1
+  allowDataModeRandomConstant: 0
+  allowDataModeCurve: 0
+  allowDataModeRandomCurve: 0
+  allowDataModeReference: 0
+  allowDataModeParameter: 0
+  dataMode: 0
+  reference: {fileID: 0}
+  parameterName: 
+  ownerBlueprint: {fileID: 11400000}
+  coordSystem: 0
+  coordSystemConversionMode: 0
+  propertyRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  shouldSelectThis: 0
+  shouldRepaintPicker: 0
+  shouldBeRemoved: 0
+  randomSeed: 702166046
+  constant: 1
+  randomMin: 0
+  randomMax: 1
+  curve: {fileID: 11400034}
+  curveMin: {fileID: 11400036}
+  curveMax: {fileID: 11400038}
+  isInteger: 0
+--- !u!114 &11400034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Time scale_curve
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Time scale_curveMin
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Time scale_curveMax
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f0f40f1e6e0404cabead54c1695835, type: 3}
+  m_Name: Accel. noise smoothing
+  m_EditorClassIdentifier: 
+  allowDataModeConstant: 1
+  allowDataModeRandomConstant: 0
+  allowDataModeCurve: 0
+  allowDataModeRandomCurve: 0
+  allowDataModeReference: 0
+  allowDataModeParameter: 0
+  dataMode: 0
+  reference: {fileID: 0}
+  parameterName: 
+  ownerBlueprint: {fileID: 11400000}
+  coordSystem: 0
+  coordSystemConversionMode: 0
+  propertyRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  shouldSelectThis: 0
+  shouldRepaintPicker: 0
+  shouldBeRemoved: 0
+  randomSeed: 1361250356
+  constant: .5
+  randomMin: 0
+  randomMax: .5
+  curve: {fileID: 11400042}
+  curveMin: {fileID: 11400044}
+  curveMax: {fileID: 11400046}
+  isInteger: 0
+--- !u!114 &11400042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Accel. noise smoothing_curve
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Accel. noise smoothing_curveMin
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cfffa94a15d8c4ab2ef2131326f12c, type: 3}
+  m_Name: Accel. noise smoothing_curveMax
+  m_EditorClassIdentifier: 
+  curveInput: 0
+  curveInputVectorComponent: 0
+  curveInputColorComponent: 0
+  curveInputCoordSystem: 0
+  inputRangeMin: 0
+  inputRangeMax: 1
+  outputRangeMin: 0
+  outputRangeMax: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4defe050859912c428118c24a46c41b0, type: 3}
+  m_Name: Plays on start?
+  m_EditorClassIdentifier: 
+  allowDataModeConstant: 1
+  allowDataModeRandomConstant: 0
+  allowDataModeCurve: 0
+  allowDataModeRandomCurve: 0
+  allowDataModeReference: 1
+  allowDataModeParameter: 1
+  dataMode: 0
+  reference: {fileID: 0}
+  parameterName: 
+  ownerBlueprint: {fileID: 11400000}
+  coordSystem: 0
+  coordSystemConversionMode: 0
+  propertyRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  shouldSelectThis: 0
+  shouldRepaintPicker: 0
+  shouldBeRemoved: 0
+  randomSeed: 0
+  value: 1

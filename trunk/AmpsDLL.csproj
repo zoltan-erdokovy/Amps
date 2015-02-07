@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{693F5B7D-CAC7-4BE2-ABDE-971C37E9DF75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AmpsDLL</RootNamespace>
+    <AssemblyName>AmpsDLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;AMPS_DLL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseEditor|AnyCPU'">
+    <OutputPath>bin\ReleaseEditor\</OutputPath>
+    <DefineConstants>TRACE;UNITY_EDITOR AMPS_DLL</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Amps\Editor\AmpsBlueprintAssetCreator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Editor\AmpsEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\AmpsBlueprint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\AmpsEmitter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\AmpsHelpers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Curves\BaseCurve.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Curves\ScalarCurve.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Curves\VectorCurve.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\DropdownData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\EventData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\BaseEmitterModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\BaseGenericModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\BaseModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\BaseMultiFunctionModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\BaseRenderModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\BaseSamplerModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\ColorModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\DataConverterModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\EventCreatorModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\EventListenerModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\InfoModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\MeshRenderModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\MotionTweakerMFModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\NormalizeModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\PointSamplerModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\PropertySamplerModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\QuadRenderModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\QuickSetupMFModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\ScalarModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\TransformSamplerModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\VectorModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\VectorSamplerModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Modules\VolumeSamplerModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Parameters\BaseParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\ParticleMarker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Pool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Properties\BaseProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Properties\BoolProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Properties\ColorProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Properties\DropdownProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Properties\GameObjectProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Properties\MaterialProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Properties\MeshProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Properties\ScalarProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Properties\StringProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Properties\VectorProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\PropertyReference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Stacks\BaseStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Stacks\FloatArrayStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Stacks\FloatStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Stacks\MultiFunctionStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Stacks\VectorArrayStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assets\Amps\Scripts\Stacks\VoidStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Amps\Editor.meta" />
+    <None Include="Assets\Amps\Editor\AmpsBlueprintAssetCreator.cs.meta" />
+    <None Include="Assets\Amps\Editor\AmpsEditor.cs.meta" />
+    <None Include="Assets\Amps\GUI.meta" />
+    <None Include="Assets\Amps\GUI\AmpsSkin.guiskin" />
+    <None Include="Assets\Amps\GUI\AmpsSkin.guiskin.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements.ai" />
+    <None Include="Assets\Amps\GUI\GUI_Elements.ai.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_01.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_02.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_03.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_04.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_05.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_06.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_07.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_08.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_09.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_10.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_11.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_12.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_13.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_14.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_15.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_16.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_17.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_18.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_19.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_20.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_21.png.meta" />
+    <None Include="Assets\Amps\GUI\GUI_Elements_22.png.meta" />
+    <None Include="Assets\Amps\Materials.meta" />
+    <None Include="Assets\Amps\Materials\ColorPicker_A.mat" />
+    <None Include="Assets\Amps\Materials\ColorPicker_A.mat.meta" />
+    <None Include="Assets\Amps\Materials\ColorPicker_H.mat" />
+    <None Include="Assets\Amps\Materials\ColorPicker_H.mat.meta" />
+    <None Include="Assets\Amps\Materials\ColorPicker_SV.mat" />
+    <None Include="Assets\Amps\Materials\ColorPicker_SV.mat.meta" />
+    <None Include="Assets\Amps\Materials\ColorPreview.mat" />
+    <None Include="Assets\Amps\Materials\ColorPreview.mat.meta" />
+    <None Include="Assets\Amps\Materials\ParticleVertexColor.mat" />
+    <None Include="Assets\Amps\Materials\ParticleVertexColor.mat.meta" />
+    <None Include="Assets\Amps\Scripts.meta" />
+    <None Include="Assets\Amps\Scripts\AmpsBlueprint.cs.meta" />
+    <None Include="Assets\Amps\Scripts\AmpsEmitter.cs.meta" />
+    <None Include="Assets\Amps\Scripts\AmpsHelpers.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Curves.meta" />
+    <None Include="Assets\Amps\Scripts\Curves\BaseCurve.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Curves\ScalarCurve.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Curves\VectorCurve.cs.meta" />
+    <None Include="Assets\Amps\Scripts\DropdownData.cs.meta" />
+    <None Include="Assets\Amps\Scripts\EventData.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\BaseEmitterModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\BaseGenericModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\BaseModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\BaseMultiFunctionModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\BaseRenderModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\BaseSamplerModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\ColorModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\DataConverterModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\EventCreatorModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\EventListenerModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\InfoModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\MeshRenderModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\MotionTweakerMFModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\NormalizeModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\PointSamplerModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\PropertySamplerModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\QuadRenderModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\QuickSetupMFModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\ScalarModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\TransformSamplerModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\VectorModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\VectorSamplerModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Modules\VolumeSamplerModule.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Parameters.meta" />
+    <None Include="Assets\Amps\Scripts\Parameters\BaseParameter.cs.meta" />
+    <None Include="Assets\Amps\Scripts\ParticleMarker.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Pool.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Properties.meta" />
+    <None Include="Assets\Amps\Scripts\Properties\BaseProperty.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Properties\BoolProperty.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Properties\ColorProperty.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Properties\DropdownProperty.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Properties\GameObjectProperty.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Properties\MaterialProperty.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Properties\MeshProperty.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Properties\ScalarProperty.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Properties\StringProperty.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Properties\VectorProperty.cs.meta" />
+    <None Include="Assets\Amps\Scripts\PropertyReference.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Stacks.meta" />
+    <None Include="Assets\Amps\Scripts\Stacks\BaseStack.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Stacks\FloatArrayStack.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Stacks\FloatStack.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Stacks\MultiFunctionStack.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Stacks\VectorArrayStack.cs.meta" />
+    <None Include="Assets\Amps\Scripts\Stacks\VoidStack.cs.meta" />
+    <None Include="Assets\Amps\Shaders.meta" />
+    <None Include="Assets\Amps\Shaders\ColorPicker_A.shader" />
+    <None Include="Assets\Amps\Shaders\ColorPicker_A.shader.meta" />
+    <None Include="Assets\Amps\Shaders\ColorPicker_H.shader" />
+    <None Include="Assets\Amps\Shaders\ColorPicker_H.shader.meta" />
+    <None Include="Assets\Amps\Shaders\ColorPicker_SV.shader" />
+    <None Include="Assets\Amps\Shaders\ColorPicker_SV.shader.meta" />
+    <None Include="Assets\Amps\Shaders\ColorPreview.shader" />
+    <None Include="Assets\Amps\Shaders\ColorPreview.shader.meta" />
+    <None Include="Assets\Amps\Shaders\UVDisplay.shader" />
+    <None Include="Assets\Amps\Shaders\UVDisplay.shader.meta" />
+    <None Include="Assets\Amps\Shaders\VertexColorDisplay.shader" />
+    <None Include="Assets\Amps\Shaders\VertexColorDisplay.shader.meta" />
+    <None Include="Assets\Amps\Textures.meta" />
+    <None Include="Assets\Amps\Textures\Base_diff.png.meta" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Amps\GUI\GUI_Elements_01.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_02.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_03.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_04.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_05.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_06.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_07.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_08.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_09.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_10.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_11.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_12.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_13.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_14.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_15.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_16.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_17.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_18.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_19.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_20.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_21.png" />
+    <Content Include="Assets\Amps\GUI\GUI_Elements_22.png" />
+    <Content Include="Assets\Amps\Textures\Base_diff.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

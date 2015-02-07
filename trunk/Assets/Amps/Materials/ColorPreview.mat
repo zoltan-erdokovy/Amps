@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ColorPreview
+  m_Shader: {fileID: 4800000, guid: 813ebb36d556c6348aad224716e65301, type: 3}
+  m_ShaderKeywords: []
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _CheckerContrast
+        second: .100000001
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .996062994, g: .993448675, b: .992141485, a: 1}
+      data:
+        first:
+          name: _CheckerTiling
+        second: {r: 20, g: 2, b: 0, a: 0}

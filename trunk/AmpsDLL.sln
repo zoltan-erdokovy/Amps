@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmpsDLL", "AmpsDLL.csproj", "{693F5B7D-CAC7-4BE2-ABDE-971C37E9DF75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ReleaseEditor|Any CPU = ReleaseEditor|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{693F5B7D-CAC7-4BE2-ABDE-971C37E9DF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693F5B7D-CAC7-4BE2-ABDE-971C37E9DF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693F5B7D-CAC7-4BE2-ABDE-971C37E9DF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693F5B7D-CAC7-4BE2-ABDE-971C37E9DF75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{693F5B7D-CAC7-4BE2-ABDE-971C37E9DF75}.ReleaseEditor|Any CPU.ActiveCfg = ReleaseEditor|Any CPU
+		{693F5B7D-CAC7-4BE2-ABDE-971C37E9DF75}.ReleaseEditor|Any CPU.Build.0 = ReleaseEditor|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

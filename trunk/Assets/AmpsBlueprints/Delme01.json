@@ -1,0 +1,1178 @@
+{
+  "$type": "System.Collections.Generic.List`1[[Amps.BaseStack, Assembly-CSharp]], mscorlib",
+  "$values": [
+    {
+      "$id": "1",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Emitter",
+      "stackFunction": 0,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": [
+          {
+            "$id": "2",
+            "$type": "Amps.BaseEmitterModule, Assembly-CSharp",
+            "emitterDuration": {
+              "$id": "3",
+              "$type": "Amps.ScalarProperty, Assembly-CSharp",
+              "constant": 5.5,
+              "randomMin": 0.0,
+              "randomMax": 5.0,
+              "curve": {
+                "$id": "4",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "5",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "6",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 5.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Emitter duration_curve",
+                "hideFlags": 0
+              },
+              "curveMin": {
+                "$id": "7",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "8",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "9",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 5.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Emitter duration_curveMin",
+                "hideFlags": 0
+              },
+              "curveMax": {
+                "$id": "10",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "11",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "12",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 5.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Emitter duration_curveMax",
+                "hideFlags": 0
+              },
+              "isInteger": false,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": false,
+              "allowDataModeParameter": true,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 782462538,
+              "name": "Emitter duration",
+              "hideFlags": 0
+            },
+            "isLooping": {
+              "$id": "13",
+              "$type": "Amps.BoolProperty, Assembly-CSharp",
+              "value": true,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": false,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 0,
+              "name": "Looping?",
+              "hideFlags": 0
+            },
+            "maxParticles": {
+              "$id": "14",
+              "$type": "Amps.ScalarProperty, Assembly-CSharp",
+              "constant": 11.0,
+              "randomMin": 0.0,
+              "randomMax": 10.0,
+              "curve": {
+                "$id": "15",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "16",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "17",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 10.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Particle limit_curve",
+                "hideFlags": 0
+              },
+              "curveMin": {
+                "$id": "18",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "19",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "20",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 10.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Particle limit_curveMin",
+                "hideFlags": 0
+              },
+              "curveMax": {
+                "$id": "21",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "22",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "23",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 10.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Particle limit_curveMax",
+                "hideFlags": 0
+              },
+              "isInteger": true,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": true,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": false,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 1134860882,
+              "name": "Particle limit",
+              "hideFlags": 0
+            },
+            "updateRate": {
+              "$id": "24",
+              "$type": "Amps.ScalarProperty, Assembly-CSharp",
+              "constant": 30.0,
+              "randomMin": 0.0,
+              "randomMax": 30.0,
+              "curve": {
+                "$id": "25",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "26",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "27",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 30.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Updates per second_curve",
+                "hideFlags": 0
+              },
+              "curveMin": {
+                "$id": "28",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "29",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "30",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 30.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Updates per second_curveMin",
+                "hideFlags": 0
+              },
+              "curveMax": {
+                "$id": "31",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "32",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "33",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 30.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Updates per second_curveMax",
+                "hideFlags": 0
+              },
+              "isInteger": false,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": false,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 1549090635,
+              "name": "Updates per second",
+              "hideFlags": 0
+            },
+            "timeScale": {
+              "$id": "34",
+              "$type": "Amps.ScalarProperty, Assembly-CSharp",
+              "constant": 1.1,
+              "randomMin": 0.0,
+              "randomMax": 1.0,
+              "curve": {
+                "$id": "35",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "36",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "37",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 1.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Time scale_curve",
+                "hideFlags": 0
+              },
+              "curveMin": {
+                "$id": "38",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "39",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "40",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 1.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Time scale_curveMin",
+                "hideFlags": 0
+              },
+              "curveMax": {
+                "$id": "41",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "42",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "43",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 1.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Time scale_curveMax",
+                "hideFlags": 0
+              },
+              "isInteger": false,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": false,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 1075966075,
+              "name": "Time scale",
+              "hideFlags": 0
+            },
+            "accelerationNoiseSmoothing": {
+              "$id": "44",
+              "$type": "Amps.ScalarProperty, Assembly-CSharp",
+              "constant": 0.55,
+              "randomMin": 0.0,
+              "randomMax": 0.5,
+              "curve": {
+                "$id": "45",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "46",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "47",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 0.5,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Accel. noise smoothing_curve",
+                "hideFlags": 0
+              },
+              "curveMin": {
+                "$id": "48",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "49",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "50",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 0.5,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Accel. noise smoothing_curveMin",
+                "hideFlags": 0
+              },
+              "curveMax": {
+                "$id": "51",
+                "$type": "Amps.ScalarCurve, Assembly-CSharp",
+                "outputRangeMin": 0.0,
+                "outputRangeMax": 1.0,
+                "curve": {
+                  "$id": "52",
+                  "$type": "UnityEngine.AnimationCurve, UnityEngine",
+                  "keys": {
+                    "$type": "UnityEngine.Keyframe[], UnityEngine",
+                    "$values": [
+                      {
+                        "$id": "53",
+                        "$type": "UnityEngine.Keyframe, UnityEngine",
+                        "time": 0.0,
+                        "value": 0.5,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "tangentMode": 0
+                      }
+                    ]
+                  },
+                  "length": 1,
+                  "preWrapMode": 8,
+                  "postWrapMode": 8
+                },
+                "curveInput": 0,
+                "curveInputVectorComponent": 0,
+                "curveInputColorComponent": 0,
+                "curveInputCoordSystem": 0,
+                "inputRangeMin": 0.0,
+                "inputRangeMax": 1.0,
+                "name": "Accel. noise smoothing_curveMax",
+                "hideFlags": 0
+              },
+              "isInteger": false,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": false,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 1967482733,
+              "name": "Accel. noise smoothing",
+              "hideFlags": 0
+            },
+            "playOnAwake": {
+              "$id": "54",
+              "$type": "Amps.BoolProperty, Assembly-CSharp",
+              "value": true,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": true,
+              "allowDataModeParameter": true,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 0,
+              "name": "Plays on start?",
+              "hideFlags": 0
+            },
+            "isEmitting": false,
+            "isEnabled": true,
+            "type": "Basic setup",
+            "moduleName": {
+              "$id": "55",
+              "$type": "Amps.StringProperty, Assembly-CSharp",
+              "value": "Basic emitter properties",
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": false,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 0,
+              "name": "Description",
+              "hideFlags": 0
+            },
+            "properties": {
+              "$type": "System.Collections.Generic.List`1[[Amps.BaseProperty, Assembly-CSharp]], mscorlib",
+              "$values": [
+                {
+                  "$ref": "55"
+                },
+                {
+                  "$ref": "3"
+                },
+                {
+                  "$ref": "13"
+                },
+                {
+                  "$ref": "14"
+                },
+                {
+                  "$ref": "24"
+                },
+                {
+                  "$ref": "34"
+                },
+                {
+                  "$ref": "44"
+                },
+                {
+                  "$ref": "54"
+                }
+              ]
+            },
+            "sharedProperties": {
+              "$type": "System.Collections.Generic.List`1[[Amps.BaseProperty, Assembly-CSharp]], mscorlib",
+              "$values": []
+            },
+            "name": "Basic setup",
+            "hideFlags": 0
+          }
+        ]
+      },
+      "moduleType": "Amps.BaseEmitterModule",
+      "isVector3Stack": false,
+      "isParticleStack": false
+    },
+    {
+      "$id": "56",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Render",
+      "stackFunction": 1,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": [
+          {
+            "$id": "57",
+            "$type": "Amps.QuadRenderModule, Assembly-CSharp",
+            "orientationDisplayData": {
+              "$type": "System.String[], mscorlib",
+              "$values": [
+                "Default",
+                "Camera facing",
+                "Rotated camera facing",
+                "Upright camera facing"
+              ]
+            },
+            "normalModeDisplayData": {
+              "$type": "System.String[], mscorlib",
+              "$values": [
+                "Skip",
+                "Flat"
+              ]
+            },
+            "tangentModeDisplayData": {
+              "$type": "System.String[], mscorlib",
+              "$values": [
+                "Skip",
+                "Generate",
+                "Custom Vector (XYZW)"
+              ]
+            },
+            "uv2ModeDisplayData": {
+              "$type": "System.String[], mscorlib",
+              "$values": [
+                "Skip",
+                "Custom Vector (XY)",
+                "Custom Vector (XYZW)"
+              ]
+            },
+            "doubleSidedColorModeDisplayData": {
+              "$type": "System.String[], mscorlib",
+              "$values": [
+                "Use Color",
+                "Use Custom Vector"
+              ]
+            },
+            "orientation": {
+              "$id": "58",
+              "$type": "Amps.DropdownProperty, Assembly-CSharp",
+              "constant": 1,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": true,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 0,
+              "name": "Orientation",
+              "hideFlags": 0
+            },
+            "normalMode": {
+              "$id": "59",
+              "$type": "Amps.DropdownProperty, Assembly-CSharp",
+              "constant": 0,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": true,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 0,
+              "name": "Normal mode",
+              "hideFlags": 0
+            },
+            "tangentMode": {
+              "$id": "60",
+              "$type": "Amps.DropdownProperty, Assembly-CSharp",
+              "constant": 0,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": true,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 0,
+              "name": "Tangent mode",
+              "hideFlags": 0
+            },
+            "uv2Mode": {
+              "$id": "61",
+              "$type": "Amps.DropdownProperty, Assembly-CSharp",
+              "constant": 0,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": true,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 0,
+              "name": "UV2 mode",
+              "hideFlags": 0
+            },
+            "isDoubleSided": {
+              "$id": "62",
+              "$type": "Amps.BoolProperty, Assembly-CSharp",
+              "value": false,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": true,
+              "allowDataModeParameter": true,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 0,
+              "name": "Double sided?",
+              "hideFlags": 0
+            },
+            "doubleSidedColorMode": {
+              "$id": "63",
+              "$type": "Amps.DropdownProperty, Assembly-CSharp",
+              "constant": 0,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": true,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 0,
+              "name": "Backside color mode",
+              "hideFlags": 0
+            },
+            "particleMaterial": {
+              "$id": "64",
+              "$type": "Amps.MaterialProperty, Assembly-CSharp",
+              "value": null,
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": false,
+              "allowDataModeParameter": true,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 0,
+              "name": "Material",
+              "hideFlags": 0
+            },
+            "isEnabled": true,
+            "type": "Quad renderer",
+            "moduleName": {
+              "$id": "65",
+              "$type": "Amps.StringProperty, Assembly-CSharp",
+              "value": "Quad renderer (587)",
+              "allowDataModeConstant": true,
+              "allowDataModeRandomConstant": false,
+              "allowDataModeCurve": false,
+              "allowDataModeRandomCurve": false,
+              "allowDataModeReference": false,
+              "allowDataModeParameter": false,
+              "dataMode": 0,
+              "parameterName": "",
+              "coordSystem": 0,
+              "coordSystemConversionMode": 0,
+              "randomSeed": 0,
+              "name": "Description",
+              "hideFlags": 0
+            },
+            "properties": {
+              "$type": "System.Collections.Generic.List`1[[Amps.BaseProperty, Assembly-CSharp]], mscorlib",
+              "$values": [
+                {
+                  "$ref": "65"
+                },
+                {
+                  "$ref": "64"
+                },
+                {
+                  "$ref": "58"
+                },
+                {
+                  "$ref": "59"
+                },
+                {
+                  "$ref": "60"
+                },
+                {
+                  "$ref": "61"
+                },
+                {
+                  "$ref": "62"
+                },
+                {
+                  "$ref": "63"
+                }
+              ]
+            },
+            "sharedProperties": {
+              "$type": "System.Collections.Generic.List`1[[Amps.BaseProperty, Assembly-CSharp]], mscorlib",
+              "$values": []
+            },
+            "name": "Quad renderer",
+            "hideFlags": 0
+          }
+        ]
+      },
+      "moduleType": "Amps.BaseRenderModule",
+      "isVector3Stack": false,
+      "isParticleStack": false
+    },
+    {
+      "$id": "66",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Shared",
+      "stackFunction": 2,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": false,
+      "isParticleStack": false
+    },
+    {
+      "$id": "67",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Spawn Rate",
+      "stackFunction": 3,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": false,
+      "isParticleStack": false
+    },
+    {
+      "$id": "68",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Death Condition",
+      "stackFunction": 4,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": false,
+      "isParticleStack": true
+    },
+    {
+      "$id": "69",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Death Duration",
+      "stackFunction": 5,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": false,
+      "isParticleStack": true
+    },
+    {
+      "$id": "70",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Custom Scalar",
+      "stackFunction": 6,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": false,
+      "isParticleStack": true
+    },
+    {
+      "$id": "71",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Custom Vector",
+      "stackFunction": 7,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": false,
+      "isParticleStack": true
+    },
+    {
+      "$id": "72",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Acceleration",
+      "stackFunction": 8,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": true,
+      "isParticleStack": true
+    },
+    {
+      "$id": "73",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Velocity",
+      "stackFunction": 9,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": true,
+      "isParticleStack": true
+    },
+    {
+      "$id": "74",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Position",
+      "stackFunction": 10,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": true,
+      "isParticleStack": true
+    },
+    {
+      "$id": "75",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Rotation Rate",
+      "stackFunction": 11,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": true,
+      "isParticleStack": true
+    },
+    {
+      "$id": "76",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Rotation",
+      "stackFunction": 12,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": true,
+      "isParticleStack": true
+    },
+    {
+      "$id": "77",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Scale",
+      "stackFunction": 13,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": true,
+      "isParticleStack": true
+    },
+    {
+      "$id": "78",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Color",
+      "stackFunction": 14,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": false,
+      "isParticleStack": true
+    },
+    {
+      "$id": "79",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Pivot Offset",
+      "stackFunction": 15,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseGenericModule",
+      "isVector3Stack": true,
+      "isParticleStack": true
+    },
+    {
+      "$id": "80",
+      "$type": "Amps.BaseStack, Assembly-CSharp",
+      "name": "Multi Function",
+      "stackFunction": 16,
+      "modules": {
+        "$type": "System.Collections.Generic.List`1[[Amps.BaseModule, Assembly-CSharp]], mscorlib",
+        "$values": []
+      },
+      "moduleType": "Amps.BaseMultiFunctionModule",
+      "isVector3Stack": false,
+      "isParticleStack": false
+    }
+  ]
+}

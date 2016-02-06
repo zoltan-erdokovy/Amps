@@ -175,48 +175,59 @@ namespace Amps
 		//
 		public void ShowScalarParameter()
 		{
-			EditorGUIUtility.LookLikeControls(40, 40);
+			EditorGUIUtility.labelWidth = 40;
+			EditorGUIUtility.fieldWidth = 40;
+
 			scalarParameter = MyFloatField("", scalarParameter, GUILayout.ExpandWidth(false));
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 		}
 
 		// SHOW VECTOR PARAMETER //
 		//
 		public void ShowVectorParameter()
 		{
-			EditorGUIUtility.LookLikeControls(20, 35);
+			EditorGUIUtility.labelWidth = 20;
+			EditorGUIUtility.fieldWidth = 35;
 			vectorParameter.x = MyFloatField("", vectorParameter.x, GUILayout.ExpandWidth(false));
 			vectorParameter.y = MyFloatField("", vectorParameter.y, GUILayout.ExpandWidth(false));
 			vectorParameter.z = MyFloatField("", vectorParameter.z, GUILayout.ExpandWidth(false));
 			vectorParameter.w = MyFloatField("", vectorParameter.w, GUILayout.ExpandWidth(false));
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 		}
 
 		// SHOW GAME OBJECT PARAMETER //
 		//
 		public void ShowGameObjectParameter()
 		{
-			EditorGUIUtility.LookLikeControls(20, 192);
+			EditorGUIUtility.labelWidth = 20;
+			EditorGUIUtility.fieldWidth = 192;
 			gameObjectParameter = (GameObject)EditorGUILayout.ObjectField(gameObjectParameter, typeof(GameObject), true);
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 		}
 
 		// SHOW MESH PARAMETER //
 		//
 		public void ShowMeshParameter()
 		{
-			EditorGUIUtility.LookLikeControls(20, 192);
+			EditorGUIUtility.labelWidth = 20;
+			EditorGUIUtility.fieldWidth = 192;
 			meshParameter = (Mesh)EditorGUILayout.ObjectField(meshParameter, typeof(Mesh), false);
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 		}
 
 		// SHOW MATERIAL PARAMETER //
 		//
 		public void ShowMaterialParameter()
 		{
-			EditorGUIUtility.LookLikeControls(20, 192);
+			EditorGUIUtility.labelWidth = 20;
+			EditorGUIUtility.fieldWidth = 192;
 			materialParameter = (Material)EditorGUILayout.ObjectField(materialParameter, typeof(Material), false);
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 		}
 
 		// MY FLOAT FIELD //

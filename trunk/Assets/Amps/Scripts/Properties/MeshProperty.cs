@@ -98,9 +98,11 @@ namespace Amps
 			switch (dataMode)
 			{
 				case eDataMode.Constant:
-					EditorGUIUtility.LookLikeControls(50, 50);
+					EditorGUIUtility.labelWidth = 50;
+					EditorGUIUtility.fieldWidth = 50;
 					value = (Mesh)EditorGUILayout.ObjectField("Mesh", value, typeof(Mesh), true);
-					EditorGUIUtility.LookLikeControls();
+					EditorGUIUtility.labelWidth = 0;
+					EditorGUIUtility.fieldWidth = 0;
 					break;
 
 				case eDataMode.Reference:
@@ -111,9 +113,11 @@ namespace Amps
 				case eDataMode.Parameter:
 					GUILayout.BeginVertical();
 					ParameterHeader();
-					EditorGUIUtility.LookLikeControls(50, 50);
+					EditorGUIUtility.labelWidth = 50;
+					EditorGUIUtility.fieldWidth = 50;
 					value = (Mesh)EditorGUILayout.ObjectField("Mesh", value, typeof(Mesh), true);
-					EditorGUIUtility.LookLikeControls();
+					EditorGUIUtility.labelWidth = 0;
+					EditorGUIUtility.fieldWidth = 0;
 					GUILayout.EndVertical();
 					break;
 			}

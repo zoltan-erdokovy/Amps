@@ -36,6 +36,7 @@ Shader "Amps/Vertex color display (lit)"
 
 		void vert (inout appdata_full v, out Input o)
 		{
+			UNITY_INITIALIZE_OUTPUT(Input, o);
 			o.sWorldNormal = mul((float3x3)_Object2World, SCALED_NORMAL);
 			o.vertexColor = v.color;
 		}

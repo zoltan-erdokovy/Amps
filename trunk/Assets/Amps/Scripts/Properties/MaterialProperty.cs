@@ -90,17 +90,21 @@ namespace Amps
 			switch (dataMode)
 			{
 				case eDataMode.Constant:
-					EditorGUIUtility.LookLikeControls(50, 50);
+					EditorGUIUtility.labelWidth = 50;
+					EditorGUIUtility.fieldWidth = 50;
 					value = (Material)EditorGUILayout.ObjectField("Material", value, typeof(Material), true);
-					EditorGUIUtility.LookLikeControls();
+					EditorGUIUtility.labelWidth = 0;
+					EditorGUIUtility.fieldWidth = 0;
 					break;
 
 				case eDataMode.Parameter:
 					GUILayout.BeginVertical();
 					ParameterHeader();
-					EditorGUIUtility.LookLikeControls(50, 50);
+					EditorGUIUtility.labelWidth = 50;
+					EditorGUIUtility.fieldWidth = 50;
 					value = (Material)EditorGUILayout.ObjectField("Material", value, typeof(Material), true);
-					EditorGUIUtility.LookLikeControls();
+					EditorGUIUtility.labelWidth = 0;
+					EditorGUIUtility.fieldWidth = 0;
 					GUILayout.EndVertical();
 					break;
 			}

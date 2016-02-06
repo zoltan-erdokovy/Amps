@@ -41,7 +41,7 @@ public class RigidBodyNudger : MonoBehaviour
 
 	void Update()
 	{
-		if (rigidbody != null)
+		if (GetComponent<Rigidbody>() != null)
 		{
 			if (timeUntilNudge < 0)
 			{
@@ -62,7 +62,7 @@ public class RigidBodyNudger : MonoBehaviour
 					//Debug.DrawLine(transform.position, transform.parent.transform.position);
 				}
 
-				rigidbody.AddForce(currentNudgeForce * Time.deltaTime, ForceMode.Acceleration);
+				GetComponent<Rigidbody>().AddForce(currentNudgeForce * Time.deltaTime, ForceMode.Acceleration);
 				
 				if (timeUntilNudge < -nudgeLength)
 				{

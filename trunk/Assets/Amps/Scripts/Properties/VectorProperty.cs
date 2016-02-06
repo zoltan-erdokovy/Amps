@@ -308,20 +308,24 @@ namespace Amps
 				case eDataMode.Constant:
 					GUILayout.BeginHorizontal();
 					GUILayout.FlexibleSpace();
-					EditorGUIUtility.LookLikeControls(20, 35);
+					EditorGUIUtility.labelWidth = 20;
+					EditorGUIUtility.fieldWidth = 35;
 					constant.x = MyFloatField("X", constant.x, GUILayout.ExpandWidth(false));
 					constant.y = MyFloatField("Y", constant.y, GUILayout.ExpandWidth(false));
 					constant.z = MyFloatField("Z", constant.z, GUILayout.ExpandWidth(false));
-					EditorGUIUtility.LookLikeControls();
+					EditorGUIUtility.labelWidth = 0;
+					EditorGUIUtility.fieldWidth = 0;
 					GUILayout.EndHorizontal();
 
 					if (ownerBlueprint.ownerEmitter.selectedStack.isVector3Stack == false && hideW == false)
 					{
 						GUILayout.BeginHorizontal();
 						GUILayout.FlexibleSpace();
-						EditorGUIUtility.LookLikeControls(20, 35);
+						EditorGUIUtility.labelWidth = 20;
+						EditorGUIUtility.fieldWidth = 35;
 						constant.w = MyFloatField("W", constant.w, GUILayout.ExpandWidth(false));
-						EditorGUIUtility.LookLikeControls();
+						EditorGUIUtility.labelWidth = 0;
+						EditorGUIUtility.fieldWidth = 0;
 						GUILayout.EndHorizontal();
 					}
 					break;
@@ -450,20 +454,24 @@ namespace Amps
 
 					GUILayout.BeginHorizontal();
 					GUILayout.FlexibleSpace();
-					EditorGUIUtility.LookLikeControls(20, 35);
+					EditorGUIUtility.labelWidth = 20;
+					EditorGUIUtility.fieldWidth = 35;
 					constant.x = MyFloatField("X", constant.x, GUILayout.ExpandWidth(false));
 					constant.y = MyFloatField("Y", constant.y, GUILayout.ExpandWidth(false));
 					constant.z = MyFloatField("Z", constant.z, GUILayout.ExpandWidth(false));
-					EditorGUIUtility.LookLikeControls();
+					EditorGUIUtility.labelWidth = 0;
+					EditorGUIUtility.fieldWidth = 0;
 					GUILayout.EndHorizontal();
 
 					if (ownerBlueprint.ownerEmitter.selectedStack.isVector3Stack == false && hideW == false)
 					{
 						GUILayout.BeginHorizontal();
 						GUILayout.FlexibleSpace();
-						EditorGUIUtility.LookLikeControls(20, 35);
+						EditorGUIUtility.labelWidth = 20;
+						EditorGUIUtility.fieldWidth = 35;
 						constant.w = MyFloatField("W", constant.w, GUILayout.ExpandWidth(false));
-						EditorGUIUtility.LookLikeControls();
+						EditorGUIUtility.labelWidth = 0;
+						EditorGUIUtility.fieldWidth = 0;
 						GUILayout.EndHorizontal();
 					}
 
@@ -515,19 +523,23 @@ namespace Amps
 
 			GUILayout.BeginHorizontal();
 			GUILayout.FlexibleSpace();
-			EditorGUIUtility.LookLikeControls(30, 35);
+			EditorGUIUtility.labelWidth = 30;
+			EditorGUIUtility.fieldWidth = 35;
 			constant.x = MyFloatField("X", constant.x, GUILayout.ExpandWidth(false));
 			constant.y = MyFloatField("Y", constant.y, GUILayout.ExpandWidth(false));
 			constant.z = MyFloatField("Z", constant.z, GUILayout.ExpandWidth(false));
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 			GUILayout.EndHorizontal();
 			EditorGUILayout.Space();
 
 			GUILayout.BeginHorizontal();
 			GUILayout.FlexibleSpace();
-			EditorGUIUtility.LookLikeControls(65, 35);
+			EditorGUIUtility.labelWidth = 65;
+			EditorGUIUtility.fieldWidth = 35;
 			newMagnitude = MyFloatField("Magnitude", newMagnitude, GUILayout.ExpandWidth(false));
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 			if (newMagnitude != originalMagnitude && originalMagnitude != 0)
 			{
 				vec3 *= newMagnitude / originalMagnitude;
@@ -544,9 +556,11 @@ namespace Amps
 
 				GUILayout.BeginHorizontal();
 				GUILayout.FlexibleSpace();
-				EditorGUIUtility.LookLikeControls(30, 35);
+				EditorGUIUtility.labelWidth = 30;
+				EditorGUIUtility.fieldWidth = 35;
 				constant.w = MyFloatField("W", constant.w, GUILayout.ExpandWidth(false));
-				EditorGUIUtility.LookLikeControls();
+				EditorGUIUtility.labelWidth = 0;
+				EditorGUIUtility.fieldWidth = 0;
 				GUILayout.EndHorizontal();
 				EditorGUILayout.Space();
 			}

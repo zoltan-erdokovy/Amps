@@ -269,9 +269,11 @@ namespace Amps
 
 			GUILayout.BeginHorizontal();
 			GUILayout.Label("", GUILayout.Width(21));
-			EditorGUIUtility.LookLikeControls(50, 60);
+			EditorGUIUtility.labelWidth = 50;
+			EditorGUIUtility.fieldWidth = 60;
 			returnValue = EditorGUILayout.Slider(new GUIContent(label), returnValue, 0, 1, GUILayout.Width(160));
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 			GUILayout.EndHorizontal();
 
 			if (returnValue < 0) returnValue = 0;
@@ -288,9 +290,11 @@ namespace Amps
 			hdrFlag = GUILayout.Toggle(hdrFlag, "HDR", "hdrToggle");
 			if (hdrFlag)
 			{
-				EditorGUIUtility.LookLikeControls(100, 60);
+				EditorGUIUtility.labelWidth = 100;
+				EditorGUIUtility.fieldWidth = 60;
 				returnValue = MyFloatField(label, returnValue, GUILayout.Width(160));
-				EditorGUIUtility.LookLikeControls();
+				EditorGUIUtility.labelWidth = 0;
+				EditorGUIUtility.fieldWidth = 0;
 
 				if (returnValue < 0) returnValue = 0;
 			}
@@ -298,9 +302,11 @@ namespace Amps
 			{
 				if (returnValue > 1) returnValue = 1;
 
-				EditorGUIUtility.LookLikeControls(50, 60);
+				EditorGUIUtility.labelWidth = 50;
+				EditorGUIUtility.fieldWidth = 60;
 				returnValue = EditorGUILayout.Slider(new GUIContent(label), returnValue, 0, 1, GUILayout.Width(160));
-				EditorGUIUtility.LookLikeControls();
+				EditorGUIUtility.labelWidth = 0;
+				EditorGUIUtility.fieldWidth = 0;
 			}
 			GUILayout.EndHorizontal();
 
@@ -321,7 +327,7 @@ namespace Amps
 			switch (dataMode)
 			{
 				case eDataMode.Constant:
-					Material colorPreviewMaterial = new Material(Resources.LoadAssetAtPath("Assets/Amps/Shaders/ColorPreview.shader", typeof(Shader)) as Shader);
+					Material colorPreviewMaterial = new Material(AssetDatabase.LoadAssetAtPath("Assets/Amps/Shaders/ColorPreview.shader", typeof(Shader)) as Shader);
 					GUIStyle colorPreviewStyle = GUI.skin.GetStyle("colorPreview");
 					Rect colorPreviewRect = new Rect(0, 0, colorPreviewStyle.fixedWidth, colorPreviewStyle.fixedHeight);
 
@@ -416,19 +422,19 @@ namespace Amps
 
 			shouldRepaintPicker = false;
 
-			Material colorPickerSVMaterial = Resources.LoadAssetAtPath("Assets/Amps/Materials/ColorPicker_SV.mat", typeof(Material)) as Material;
+			Material colorPickerSVMaterial = AssetDatabase.LoadAssetAtPath("Assets/Amps/Materials/ColorPicker_SV.mat", typeof(Material)) as Material;
 			GUIStyle colorPickerSVStyle = GUI.skin.GetStyle("colorPickerSV");
 			Rect colorPickerSVRect = new Rect(colorPickerSVStyle.contentOffset.x,
 												colorPickerSVStyle.contentOffset.y,
 												colorPickerSVStyle.fixedWidth,
 												colorPickerSVStyle.fixedHeight);
-			Material colorPickerHMaterial = Resources.LoadAssetAtPath("Assets/Amps/Materials/ColorPicker_H.mat", typeof(Material)) as Material;
+			Material colorPickerHMaterial = AssetDatabase.LoadAssetAtPath("Assets/Amps/Materials/ColorPicker_H.mat", typeof(Material)) as Material;
 			GUIStyle colorPickerHStyle = GUI.skin.GetStyle("colorPickerH");
 			Rect colorPickerHRect = new Rect(colorPickerHStyle.contentOffset.x,
 												colorPickerHStyle.contentOffset.y,
 												colorPickerHStyle.fixedWidth,
 												colorPickerHStyle.fixedHeight);
-			Material colorPreviewMaterial = Resources.LoadAssetAtPath("Assets/Amps/Materials/ColorPreview.mat", typeof(Material)) as Material;
+			Material colorPreviewMaterial = AssetDatabase.LoadAssetAtPath("Assets/Amps/Materials/ColorPreview.mat", typeof(Material)) as Material;
 			GUIStyle colorPreviewStyle = GUI.skin.GetStyle("colorPreview");
 			Rect colorPreviewRect = new Rect(colorPreviewStyle.contentOffset.x,
 												colorPreviewStyle.contentOffset.y,

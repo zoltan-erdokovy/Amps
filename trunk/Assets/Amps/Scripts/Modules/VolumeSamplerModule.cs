@@ -61,7 +61,7 @@ namespace Amps
 					testedPosition = AmpsHelpers.GetSystemProperty(ownerBlueprint, particleIndex, AmpsHelpers.eCurveInputs.Position);
 				}
 
-				theCollider = sampledObject.GetValue().collider;
+				theCollider = sampledObject.GetValue().GetComponent<Collider>();
 				if (theCollider != null)
 				{
 					Vector3 theRayVector = theCollider.transform.position - testedPosition;

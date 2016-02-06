@@ -373,10 +373,12 @@ namespace Amps
 		//
 		public void PropertyMinMax(ref float min, ref float max)
 		{
-			EditorGUIUtility.LookLikeControls(30, 40);
+			EditorGUIUtility.labelWidth = 30;
+			EditorGUIUtility.fieldWidth = 40;
 			min = MyFloatField("Min", min, GUILayout.ExpandWidth(false));
 			max = MyFloatField("Max", max, GUILayout.ExpandWidth(false));
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 		}
 
 		// COORD SYSTEM POPUP //
@@ -440,7 +442,8 @@ namespace Amps
 			GUILayout.Space(16);
 
 			GUILayout.BeginHorizontal();
-			EditorGUIUtility.LookLikeControls(30, 5);
+			EditorGUIUtility.labelWidth = 30;
+			EditorGUIUtility.fieldWidth = 5;
 
 			GUILayout.Space(50);
 			GUILayout.BeginVertical();
@@ -465,7 +468,8 @@ namespace Amps
 			else theCurve.inputRangeMax = MyFloatField("", theCurve.inputRangeMax, GUILayout.ExpandWidth(false));
 			GUILayout.EndVertical();
 
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 			GUILayout.EndHorizontal();
 		}
 
@@ -511,21 +515,25 @@ namespace Amps
 			GUILayout.EndHorizontal();
 
 			GUILayout.BeginHorizontal();
-			EditorGUIUtility.LookLikeControls(30, 40);
+			EditorGUIUtility.labelWidth = 30;
+			EditorGUIUtility.fieldWidth = 40;
 			theCurve.inputRangeMin = MyFloatField("    ", theCurve.inputRangeMin, GUILayout.ExpandWidth(false));
 			GUILayout.FlexibleSpace();
 			theCurve.inputRangeMax = MyFloatField("    ", theCurve.inputRangeMax, GUILayout.ExpandWidth(false));
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 			GUILayout.EndHorizontal();
 
 			GUILayout.BeginHorizontal();
 			if (theCurve.isInputRangeRandom)
 			{
-				EditorGUIUtility.LookLikeControls(30, 40);
+				EditorGUIUtility.labelWidth = 30;
+				EditorGUIUtility.fieldWidth = 40;
 				theCurve.inputRangeRandomMin = MyFloatField("    ", theCurve.inputRangeRandomMin, GUILayout.ExpandWidth(false));
 				GUILayout.FlexibleSpace();
 				theCurve.inputRangeRandomMax = MyFloatField("    ", theCurve.inputRangeRandomMax, GUILayout.ExpandWidth(false));
-				EditorGUIUtility.LookLikeControls();
+				EditorGUIUtility.labelWidth = 0;
+				EditorGUIUtility.fieldWidth = 0;
 			}
 			GUILayout.EndHorizontal();
 		}
@@ -537,11 +545,13 @@ namespace Amps
 			GUILayout.BeginVertical();
 			//GUILayout.Label(groupName);
 			//GUILayout.FlexibleSpace();
-			EditorGUIUtility.LookLikeControls(30, 5);
+			EditorGUIUtility.labelWidth = 30;
+			EditorGUIUtility.fieldWidth = 5;
 			rangeMax = MyFloatField("", rangeMax, GUILayout.ExpandWidth(false));
 			GUILayout.Space(144);
 			rangeMin = MyFloatField("", rangeMin, GUILayout.ExpandWidth(false));
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 			GUILayout.EndVertical();
 		}
 
@@ -568,7 +578,8 @@ namespace Amps
 
 			GUILayout.BeginHorizontal(GUILayout.Width(170));
 			GUILayout.FlexibleSpace();
-			EditorGUIUtility.LookLikeControls(30, 35);
+			EditorGUIUtility.labelWidth = 30;
+			EditorGUIUtility.fieldWidth = 35;
 			min = MyFloatField("Min", min, GUILayout.ExpandWidth(false));
 			
 			max = MyFloatField("Max", max, GUILayout.ExpandWidth(false));
@@ -579,14 +590,16 @@ namespace Amps
 			GUILayout.BeginVertical(GUILayout.Width(170));
 			GUILayout.BeginHorizontal();
 			GUILayout.FlexibleSpace();
-			EditorGUIUtility.LookLikeControls(104, 35);
+			EditorGUIUtility.labelWidth = 104;
+			EditorGUIUtility.fieldWidth = 35;
 			deviance = MyFloatField("Deviance", deviance);
 			GUILayout.EndHorizontal();
 			GUILayout.BeginHorizontal();
 			GUILayout.FlexibleSpace();
 			mean = MyFloatField("Mean", mean);
 			GUILayout.EndHorizontal();
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 			GUILayout.EndVertical();
 
 			GUILayout.EndVertical();

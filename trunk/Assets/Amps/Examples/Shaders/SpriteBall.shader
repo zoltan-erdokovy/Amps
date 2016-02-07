@@ -50,19 +50,6 @@ Shader "Amps/Sprite ball"
 			// float4 _Light2Color;
 			// float4 _Light2Direction;
 
-			struct vertexToFragment
-			{
-				float4 uv : TEXCOORD0;
-				float4 position : SV_POSITION;
-				float4 positionWorld : TEXCOORD1;
-				float4 color : COLOR;
-				float3 normal : TEXCOORD2;
-				float3 normalWorld : TEXCOORD3;
-				float4 tangent : TEXCOORD4;
-				float3 tangentWorld : TEXCOORD5;
-				float3 binormalWorld : TEXCOORD6;
-			};
-
 			float Distance2D(float2 p1, float2 p2)
 			{
 				return sqrt(pow(p2.x-p1.x, 2) + pow(p2.y-p1.y, 2));
@@ -89,6 +76,19 @@ Shader "Amps/Sprite ball"
 				return returnValue;
 			}
 
+			struct vertexToFragment
+			{
+				float4 uv : TEXCOORD0;
+				float4 position : SV_POSITION;
+				float4 positionWorld : TEXCOORD1;
+				float4 color : COLOR;
+				float3 normal : TEXCOORD2;
+				float3 normalWorld : TEXCOORD3;
+				float4 tangent : TEXCOORD4;
+				float3 tangentWorld : TEXCOORD5;
+				float3 binormalWorld : TEXCOORD6;
+			};
+
 			vertexToFragment vert (appdata_full a)
 			{
 				vertexToFragment returnValue;
@@ -101,7 +101,8 @@ Shader "Amps/Sprite ball"
 				returnValue.uv = float4( a.texcoord.xy, a.texcoord1.xy);
  				returnValue.color = a.color;
 				returnValue.tangent = a.tangent;
-				returnValue.tangentWorld = normalize(float3(mul(modelMatrix, float4(float3(a.tangent), 0.0))));
+				returnValue.tangentWorld = normalize(mul(modelMatrix, float4(a.tangent.x, a.tangent.y, a.tangent.z, 0.0)).xyz);
+				returnValue.normal = a.normal;
 				returnValue.normalWorld = mul( _Object2World, float4( a.normal, 0.0 )).xyz;
 				returnValue.binormalWorld = normalize(cross(returnValue.normalWorld, returnValue.tangentWorld) * a.tangent.w);
 

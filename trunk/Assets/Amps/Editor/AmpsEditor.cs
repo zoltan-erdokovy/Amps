@@ -1,4 +1,18 @@
-﻿#if UNITY_EDITOR
+﻿// Copyright 2015 Zoltan Erdokovy
+
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+
+// http://www.apache.org/licenses/LICENSE-2.0
+
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#if UNITY_EDITOR
 
 using UnityEditor;
 using UnityEngine;
@@ -293,7 +307,7 @@ namespace Amps
 		//
 		void LoadSkin()
 		{
-			ampsSkin = Resources.LoadAssetAtPath("Assets/Amps/Gui/AmpsSkin.guiskin", typeof(GUISkin)) as GUISkin;
+			ampsSkin = AssetDatabase.LoadAssetAtPath("Assets/Amps/Gui/AmpsSkin.guiskin", typeof(GUISkin)) as GUISkin;
 		}
 
 		// GET COLUMN RECT //
@@ -355,7 +369,10 @@ namespace Amps
 				}
 				if (validEditedComponent) validEditedBlueprint = selectedEmitter.blueprint != null;
 				else selectedEmitter = null;
-				if (validEditedGO && validEditedComponent) editedBlueprintPath = AssetDatabase.GetAssetPath(selectedEmitter.blueprint);
+				if (validEditedGO && validEditedComponent)
+				{
+					editedBlueprintPath = AssetDatabase.GetAssetPath(selectedEmitter.blueprint);
+				}
 				validBlueprintGUIObject = blueprintGUIObject != null;
 				if (validBlueprintGUIObject) blueprintGUIObjectPath = AssetDatabase.GetAssetPath(blueprintGUIObject);
 			}
@@ -413,8 +430,9 @@ namespace Amps
 			if (validEditedGO &&
 				validEditedComponent)
 			{
-				if (validEditedBlueprint && editedBlueprintPath != blueprintGUIObjectPath)
+				if (validEditedBlueprint && (editedBlueprintPath != blueprintGUIObjectPath))
 				{
+					// BUG? The following line returns null even for a valid path. Worked in Unity 4.5.
 					blueprintGUIObject = AssetDatabase.LoadMainAssetAtPath(editedBlueprintPath);
 				}
 
@@ -434,7 +452,8 @@ namespace Amps
 				GUILayout.EndHorizontal();
 
 				GUILayout.BeginHorizontal(GUILayout.Width(layoutModulesColumnWidth-2));
-				blueprintGUIObject = EditorGUILayout.ObjectField(blueprintGUIObject, typeof(UnityEngine.Object), false);
+				//blueprintGUIObject = EditorGUILayout.ObjectField(blueprintGUIObject, typeof(UnityEngine.Object), false);
+				blueprintGUIObject = EditorGUILayout.ObjectField(blueprintGUIObject, typeof(Amps.AmpsBlueprint), false);
 				GUILayout.BeginVertical();
 				GUILayout.Space(4);
 				if (validEditedBlueprint == false) GUI.enabled = false;
@@ -499,8 +518,9 @@ namespace Amps
 					// Now we push back changes to the edited blueprint.
 					if (validBlueprintGUIObject == false && validEditedBlueprint)
 					{
-						selectedEmitter.blueprint = null;
-						selectedEmitter.HandleBlueprintChange();
+						// HACK: We don't push back null refs as a workaround for the suspected LoadMainAssetAtPath bug in line ~437.
+						//selectedEmitter.blueprint = null;
+						//selectedEmitter.HandleBlueprintChange();
 					}
 					else if (validBlueprintGUIObject && editedBlueprintPath != blueprintGUIObjectPath)
 					{

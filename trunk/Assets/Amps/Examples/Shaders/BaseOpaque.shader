@@ -63,6 +63,7 @@ Shader "Amps/Opaque"
 
 		void vert (inout appdata_full v, out Input o)
 		{
+			UNITY_INITIALIZE_OUTPUT(Input, o);
 			o.sWorldNormal = mul((float3x3)_Object2World, SCALED_NORMAL);
 		}
 			

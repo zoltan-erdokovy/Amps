@@ -1,4 +1,18 @@
-﻿using UnityEngine;
+﻿// Copyright 2015 Zoltan Erdokovy
+
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+
+// http://www.apache.org/licenses/LICENSE-2.0
+
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -161,48 +175,59 @@ namespace Amps
 		//
 		public void ShowScalarParameter()
 		{
-			EditorGUIUtility.LookLikeControls(40, 40);
+			EditorGUIUtility.labelWidth = 40;
+			EditorGUIUtility.fieldWidth = 40;
+
 			scalarParameter = MyFloatField("", scalarParameter, GUILayout.ExpandWidth(false));
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 		}
 
 		// SHOW VECTOR PARAMETER //
 		//
 		public void ShowVectorParameter()
 		{
-			EditorGUIUtility.LookLikeControls(20, 35);
+			EditorGUIUtility.labelWidth = 20;
+			EditorGUIUtility.fieldWidth = 35;
 			vectorParameter.x = MyFloatField("", vectorParameter.x, GUILayout.ExpandWidth(false));
 			vectorParameter.y = MyFloatField("", vectorParameter.y, GUILayout.ExpandWidth(false));
 			vectorParameter.z = MyFloatField("", vectorParameter.z, GUILayout.ExpandWidth(false));
 			vectorParameter.w = MyFloatField("", vectorParameter.w, GUILayout.ExpandWidth(false));
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 		}
 
 		// SHOW GAME OBJECT PARAMETER //
 		//
 		public void ShowGameObjectParameter()
 		{
-			EditorGUIUtility.LookLikeControls(20, 192);
+			EditorGUIUtility.labelWidth = 20;
+			EditorGUIUtility.fieldWidth = 192;
 			gameObjectParameter = (GameObject)EditorGUILayout.ObjectField(gameObjectParameter, typeof(GameObject), true);
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 		}
 
 		// SHOW MESH PARAMETER //
 		//
 		public void ShowMeshParameter()
 		{
-			EditorGUIUtility.LookLikeControls(20, 192);
+			EditorGUIUtility.labelWidth = 20;
+			EditorGUIUtility.fieldWidth = 192;
 			meshParameter = (Mesh)EditorGUILayout.ObjectField(meshParameter, typeof(Mesh), false);
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 		}
 
 		// SHOW MATERIAL PARAMETER //
 		//
 		public void ShowMaterialParameter()
 		{
-			EditorGUIUtility.LookLikeControls(20, 192);
+			EditorGUIUtility.labelWidth = 20;
+			EditorGUIUtility.fieldWidth = 192;
 			materialParameter = (Material)EditorGUILayout.ObjectField(materialParameter, typeof(Material), false);
-			EditorGUIUtility.LookLikeControls();
+			EditorGUIUtility.labelWidth = 0;
+			EditorGUIUtility.fieldWidth = 0;
 		}
 
 		// MY FLOAT FIELD //

@@ -1,3 +1,17 @@
+// Copyright 2015 Zoltan Erdokovy
+
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+
+// http://www.apache.org/licenses/LICENSE-2.0
+
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -186,16 +200,19 @@ namespace Amps
 				case eDataMode.Constant:
 					GUILayout.BeginHorizontal();
 					GUILayout.FlexibleSpace();
-					EditorGUIUtility.LookLikeControls(20, 40);
+					EditorGUIUtility.labelWidth = 20;
+					EditorGUIUtility.fieldWidth = 40;
 					if (isInteger) constant = MyIntField("=", (int)constant);
 					else constant = MyFloatField("=", constant);
-					EditorGUIUtility.LookLikeControls();
+					EditorGUIUtility.labelWidth = 0;
+					EditorGUIUtility.fieldWidth = 0;
 					GUILayout.EndHorizontal();
 					break;
 				case eDataMode.RandomConstant:
 					GUILayout.BeginHorizontal();
 					GUILayout.FlexibleSpace();
-					EditorGUIUtility.LookLikeControls(30, 40);
+					EditorGUIUtility.labelWidth = 30;
+					EditorGUIUtility.fieldWidth = 40;
 					if (isInteger)
 					{
 						randomMin = MyIntField("Min", (int)randomMin, GUILayout.ExpandWidth(false));
@@ -207,7 +224,8 @@ namespace Amps
 						randomMin = MyFloatField("Min", randomMin, GUILayout.ExpandWidth(false));
 						randomMax = MyFloatField("Max", randomMax, GUILayout.ExpandWidth(false));
 					}
-					EditorGUIUtility.LookLikeControls();
+					EditorGUIUtility.labelWidth = 0;
+					EditorGUIUtility.fieldWidth = 0;
 					GUILayout.EndHorizontal();
 					break;
 				case eDataMode.Curve:
@@ -227,9 +245,11 @@ namespace Amps
 					GUILayout.BeginVertical();
 					ParameterHeader();
 					GUILayout.BeginHorizontal();
-					EditorGUIUtility.LookLikeControls(74, 40);
+					EditorGUIUtility.labelWidth = 74;
+					EditorGUIUtility.fieldWidth = 40;
 					constant = MyFloatField("Default", constant);
-					EditorGUIUtility.LookLikeControls();
+					EditorGUIUtility.labelWidth = 0;
+					EditorGUIUtility.fieldWidth = 0;
 					GUILayout.EndHorizontal();
 					GUILayout.EndVertical();
 					break;

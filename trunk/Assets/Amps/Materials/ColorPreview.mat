@@ -2,13 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 3
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: ColorPreview
   m_Shader: {fileID: 4800000, guid: 813ebb36d556c6348aad224716e65301, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -23,12 +26,12 @@ Material:
       data:
         first:
           name: _CheckerContrast
-        second: .100000001
+        second: 0.1
     m_Colors:
       data:
         first:
           name: _Color
-        second: {r: .996062994, g: .993448675, b: .992141485, a: 1}
+        second: {r: 1.0084771, g: 1.9, b: 1.5733173, a: 1}
       data:
         first:
           name: _CheckerTiling

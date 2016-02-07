@@ -2,13 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 3
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: ColorPicker_H
   m_Shader: {fileID: 4800000, guid: 3d7c036e1dd58db4cb5297bc46a192d3, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -23,15 +26,15 @@ Material:
       data:
         first:
           name: _MarkerSize
-        second: .0399999991
+        second: 0.04
       data:
         first:
           name: _MarkerThickness
-        second: .200000003
+        second: 0.2
       data:
         first:
           name: _Hue
-        second: .0555563979
+        second: 0.43892798
     m_Colors:
       data:
         first:
